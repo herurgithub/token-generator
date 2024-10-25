@@ -1,0 +1,14 @@
+Validation:
+Prefixes should only contain letters and numbers (no spaces or special characters)
+Token number must be greater than 0
+Tokens per row must be greater than zero
+
+Positive-scenario:
+ex-blueTokens = 5
+bluePerRow = 2
+bluePrefix = "G"
+
+Negative-scenario:
+field with prefix shld have special characters space,no?
+field with no can hold float,char,space?
+on the fields with 0 and multiple combinations 

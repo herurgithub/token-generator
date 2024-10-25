@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Token Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Token Generator Application</h1>
+    <form id="tokenForm">
+        <!-- Input for blue tokens -->
+      <div class="input-group">
+        <label for="blueTokens">Number of Blue Tokens:</label>
+        <input type="number" id="blueTokens" placeholder="Enter number">
+      </div>
+
+      <div class="input-group">
+        <label for="bluePrefix">Prefix for Blue Tokens:</label>
+        <input type="text" id="bluePrefix" placeholder="Enter prefix">
+      </div>
+
+      <div class="input-group">
+        <label for="bluePerRow">Blue Tokens per Row:</label>
+        <input type="number" id="bluePerRow" placeholder="Enter number">
+      </div>
+
+        <!-- Input for red tokens -->
+      <div class="input-group">
+        <label for="redTokens">Number of Red Tokens:</label>
+        <input type="number" id="redTokens" placeholder="Enter number">
+      </div>
+
+      <div class="input-group">
+        <label for="redPrefix">Prefix for Red Tokens:</label>
+        <input type="text" id="redPrefix" placeholder="Enter prefix">
+      </div>
+
+      <div class="input-group">
+        <label for="redPerRow">Red Tokens per Row:</label>
+        <input type="number" id="redPerRow" placeholder="Enter number">
+      </div>
+
+      <!-- Buttons to generate or clear the tokens -->
+      <div class="button-group">
+        <button type="button" id="generateBtn">Generate</button>
+        <button type="button" id="clearBtn">Clear</button>
+      </div>
+    </form>
+    
+    <!-- Area where the generated tokens will be displayed-->
+    <div id="tokenDisplay" class="token-display"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
